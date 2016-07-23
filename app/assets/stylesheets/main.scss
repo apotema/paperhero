@@ -4,7 +4,7 @@ body {
 }
 
 #main-image {
-  background-image: url(main.png);
+  background-image: url(image_path('main.png'));
   height: 44em;
   background-repeat: no-repeat;
   background-size: cover;
