@@ -7,14 +7,15 @@
   <meta name="description" content="Paper Hero, a mobile game"> 
   <meta name="keywords" content="Paper Hero, IOS, Android, Paper Boy, Newspaper">
   <meta name="author" content="Alexandre Mondaini Calvão"> 
+
   <title>Paper Hero</title>  
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
-<%=  %>
 <body>
   <div class="container" style="width:960px;">
+    
     <div id="top-bar" class="row">
       <div class="col-md-6">
         <%= image_tag "logo.png", width: "200" %>
@@ -52,18 +53,20 @@
         <%= image_tag "donwload_big.png" %>
       </div>
       <div class="col-md-6">
-        <%= image_tag "app_store.png" %>
+        <a href="https://itunes.apple.com/us/app/paper-hero-new-adventures/id1111118014" target="_blank" >
+          <%= image_tag "app_store.png" %>  
+        </a>
       </div>
       <div class="col-md-6">
-        <%= image_tag "play_store.png" %>
+        <a href="https://play.google.com/store/apps/details?id=com.moca.paperhero" target="_blank" >
+          <%= image_tag "play_store.png" %>  
+        </a>
       </div>
     </div>
     <div id="contact" class="row text-center">
-
       <div class="col-md-12 title">
         <%= image_tag "contact_big.png" %>
       </div>
-      
       <script type="text/javascript">var servicedomain="www.123contactform.com"; var frmRef=''; try { frmRef=window.top.location.href; } catch(err) {}; var cfJsHost = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cscript src='" + cfJsHost + servicedomain + "/includes/easyXDM.min.js' type='text/javascript'%3E%3C/script%3E")); frmRef=encodeURIComponent(frmRef.replace(/(<([^>]+)>)/ig,'')).replace('%26','[%ANDCHAR%]'); document.write(unescape("%3Cscript src='" + cfJsHost + servicedomain + "/jsform-2099572.js?ref="+frmRef+"' type='text/javascript'%3E%3C/script%3E")); </script>
 
     </div>
